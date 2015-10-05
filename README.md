@@ -1,6 +1,8 @@
 # shiny-perspective
 
 ## MY first project!
+
+*Please note this project is in building phase and is not ready for public use.*
  
 My aim here is to make a re-useable JS script for perspective on objects.
  
