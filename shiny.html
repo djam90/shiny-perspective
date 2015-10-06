@@ -12,38 +12,20 @@
 
 <div class="container">
 
-    <div class="shiny-container">
-        <div class="shiny-object">
+    <div class="shiny-container-large">
+        <div class="shiny-object large">
             <div class="shine-effect"></div>
-            <div class="layer-1" data-offset="-68" ></div>
+            <div class="layer-1" data-offset="-8" ></div>
             <div class="layer-2" data-offset="-4"></div>
             <div class="layer-3" data-offset="1" ></div>
             <div class="layer-4" data-offset="4" ></div>
-            <div class="layer-5" data-offset="68" ></div>
+            <div class="layer-5" data-offset="8" ></div>
         </div>
-    </div>
-    <div class="fix">
-        <p>cords <span id="coords"></span></p>
-
-        <p>cords2 (offx and y) <span id="coords2"></span></p>
-
-        <p>e page x <span id="epx"></span></p>
-
-        <p>e page y <span id="epy"></span></p>
-
-        <p>tranY <span id="tranY"></span></p>
-        <p>rotX <span id="rotX"></span></p>
-        <p>rotY <span id="rotY"></span></p>
-
-        <p>theta <span id="theta"></span></p>
-
-        <p>angle <span id="angle"></span></p>
-
     </div>
 </div>
 </body>
 <script src="js/shinyOne.js"></script>
 <script>
-    addShine($('.shiny-container'));
+    shinyObjects.addShine($('.shiny-container-large'));
 </script>
 </html>

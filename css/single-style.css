@@ -4,7 +4,8 @@ body, html {
 }
 
 .container {
-
+    width: 1140px;
+    margin: 0 auto;
 }
 
 div[class*="layer-"] {
@@ -19,8 +20,9 @@ div[class*="layer-"] {
     transition: 0.1s;
 }
 
-.layer-1{
+.layer-1 {
     background-image: url('../img/layer-1.png');
+
 }
 
 .layer-2 {
@@ -31,34 +33,60 @@ div[class*="layer-"] {
     background-image: url('../img/layer-3.png');
 }
 
-.layer-4{
+.layer-4 {
     background-image: url('../img/layer-4.png');
 }
 
 .layer-5 {
     background-image: url('../img/layer-5.png');
+
 }
 
-.shiny-container {
+/* recommend to keep the 5:6 ratio for width and height */
+.shiny-container-small {
+    width: 300px;
+    height: 360px;
+    border: 1px solid red;
+    position: relative;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    transform: perspective(250px);
+}
+
+.shiny-container-large {
     width: 500px;
     height: 600px;
     border: 1px solid red;
     position: relative;
-    top: 20%;
-    left: 10%;
+    margin: 0 auto;
     transform-style: preserve-3d;
     transform: perspective(250px);
-    display: inline-flex;
+}
+
+/* working great at 16:25 ratio for width and height */
+.shiny-object.small {
+    width: 160px;
+    height: 250px;
+}
+
+.shiny-object.med {
+    width: 230px;
+    height: 360px;
+}
+
+.shiny-object.large {
+    width: 320px;
+    height: 500px;
 }
 
 .shiny-object {
     background-color: #000;
-    width: 320px;
-    height: 500px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -250px 0 0 -160px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
     border-radius: 5px;
     box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
     overflow: hidden;
@@ -73,10 +101,4 @@ div[class*="layer-"] {
     background: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 65%);
     background: linear-gradient(125deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 65%);
     z-index: 100;
-}
-
-.fix {
-    position: fixed;
-    top: 5%;
-    left: 0;
 }
