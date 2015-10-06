@@ -21,7 +21,7 @@ var shinyObjects = {
             var rotY = 1 - (posY * 3) / height;
 
             var transformTranslate = 'translateY(' + tranY + 'px)';
-            var transformRotate = 'rotateX(' + rotX + 'deg) rotateY(' + rotY + 'deg)';
+            var transformRotate = 'rotateX(' + -rotY + 'deg) rotateY(' + rotX + 'deg)';
 
             shinyObject.css({transform: transformTranslate + transformRotate});
             var top = parseInt(layers.css('top'));
