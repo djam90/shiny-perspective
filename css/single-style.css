@@ -1,104 +1,111 @@
-body, html {
-    height: 100%;
-    min-height: 100%;
+body,
+html {
+  height: 100%;
+  min-height: 100%;
 }
 
 .container {
-    width: 1140px;
-    margin: 0 auto;
+  width: 1140px;
+  margin: 0 auto;
 }
 
 div[class*="layer-"] {
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    transition: 0.1s;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transition: 0.1s;
 }
 
 .layer-1 {
-    background-image: url('../img/layer-1.png');
-
+  background-image: url("../img/layer-1.png");
 }
 
 .layer-2 {
-    background-image: url('../img/layer-2.png');
+  background-image: url("../img/layer-2.png");
 }
 
 .layer-3 {
-    background-image: url('../img/layer-3.png');
+  background-image: url("../img/layer-3.png");
 }
 
 .layer-4 {
-    background-image: url('../img/layer-4.png');
+  background-image: url("../img/layer-4.png");
 }
 
 .layer-5 {
-    background-image: url('../img/layer-5.png');
-
+  background-image: url("../img/layer-5.png");
 }
 
 /* recommend to keep the 5:6 ratio for width and height */
 .shiny-container-small {
-    width: 300px;
-    height: 360px;
-    border: 1px solid red;
-    position: relative;
-    margin: 0 auto;
-    transform-style: preserve-3d;
-    transform: perspective(250px);
+  width: 300px;
+  height: 360px;
+  border: 1px solid red;
+  position: relative;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transform: perspective(250px);
 }
 
 .shiny-container-large {
-    width: 500px;
-    height: 600px;
-    border: 1px solid red;
-    position: relative;
-    margin: 0 auto;
-    transform-style: preserve-3d;
-    transform: perspective(250px);
+  width: 500px;
+  height: 600px;
+  border: 1px solid red;
+  position: relative;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transform: perspective(250px);
 }
 
 /* working great at 16:25 ratio for width and height */
 .shiny-object.small {
-    width: 160px;
-    height: 250px;
+  width: 160px;
+  height: 250px;
 }
 
 .shiny-object.med {
-    width: 230px;
-    height: 360px;
+  width: 230px;
+  height: 360px;
 }
 
 .shiny-object.large {
-    width: 320px;
-    height: 500px;
+  width: 320px;
+  height: 500px;
 }
 
 .shiny-object {
-    background-color: #000;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    border-radius: 5px;
-    box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
-    overflow: hidden;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 
 .shine-effect {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 65%);
-    background: linear-gradient(125deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 65%);
-    z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-linear-gradient(
+    315deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 65%
+  );
+  background: linear-gradient(
+    125deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 65%
+  );
+  z-index: 100;
 }

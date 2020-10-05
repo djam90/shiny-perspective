@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Shiny</title>
-    <meta name="description" content="Poster effect">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/single-style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shiny Perspective Cards</title>
+    <meta name="description" content="Poster effect" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/single-style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-</head>
-<body>
-
-<div class="container">
-
-    <div class="shiny-container-large">
+  </head>
+  <body>
+    <div class="container">
+      <div class="shiny-container-large">
         <div class="shiny-object med">
-            <div class="shine-effect"></div>
-            <div class="layer-1" data-offset="-8" ></div>
-            <div class="layer-2" data-offset="-4"></div>
-            <div class="layer-3" data-offset="1" ></div>
-            <div class="layer-4" data-offset="4" ></div>
-            <div class="layer-5" data-offset="8" ></div>
+          <div class="shine-effect"></div>
+          <div class="layer-1" data-offset="-8"></div>
+          <div class="layer-2" data-offset="-4"></div>
+          <div class="layer-3" data-offset="1"></div>
+          <div class="layer-4" data-offset="4"></div>
+          <div class="layer-5" data-offset="8"></div>
         </div>
+      </div>
     </div>
-</div>
-</body>
-<script src="js/shinyOne.js"></script>
-<script>
-    $(function(){
-        shinyObjects.addShine($('.shiny-container-large'),1);
+  </body>
+  <script src="js/shinyOne.js"></script>
+  <script>
+    $(function () {
+      shinyObjects.addShine($(".shiny-container-large"), 1);
     });
-</script>
+  </script>
 </html>
